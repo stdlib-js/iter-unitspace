@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/iter-unitspace",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Create an iterator which returns numbers incremented by one.",
   "license": "Apache-2.0",
   "author": {
