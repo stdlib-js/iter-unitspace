@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterUnitspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unitspace@deno/mod.js';
+import iterUnitspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unitspace@v0.2.2-deno/mod.js';
 ```
 
 #### iterUnitspace( start\[, stop] )
@@ -125,7 +125,7 @@ var bool = it.next().done;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterUnitspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unitspace@deno/mod.js';
+import iterUnitspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unitspace@v0.2.2-deno/mod.js';
 
 // Create an iterator:
 var it = iterUnitspace( -50, 50 );
