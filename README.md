@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterUnitspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unitspace@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-unitspace/tags). For example,
+
+```javascript
 import iterUnitspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unitspace@v0.2.2-esm/index.mjs';
 ```
 
@@ -130,7 +135,7 @@ var bool = it.next().done;
 <body>
 <script type="module">
 
-import iterUnitspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unitspace@v0.2.2-esm/index.mjs';
+import iterUnitspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unitspace@esm/index.mjs';
 
 // Create an iterator:
 var it = iterUnitspace( -50, 50 );
