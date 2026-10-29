@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,16 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
+
+// Define a union type representing both iterable and non-iterable iterators:
+type Iterator = Iter | IterableIterator;
 
 /**
-* Create an iterator which returns numbers incremented by `1`.
+* Returns an iterator which returns numbers incremented by `1`.
 *
-* @module @stdlib/iter-unitspace
+* ## Notes
+*
+* -   If an environment supports `Symbol.iterator`, the returned iterator is iterable.
+*
+* @param start - starting value (inclusive)
+* @param stop - stopping value
+* @returns iterator
 *
 * @example
-* var iterUnitspace = require( '@stdlib/iter-unitspace' );
-*
 * var iter = iterUnitspace( 0, 99 );
 *
 * var v = iter.next().value;
@@ -39,12 +50,9 @@
 *
 * // ...
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function iterUnitspace( start: number, stop?: number ): Iterator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = iterUnitspace;
